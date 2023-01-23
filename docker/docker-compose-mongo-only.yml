@@ -1,0 +1,16 @@
+version: "2"
+
+services:
+  mongo:
+    image: mongo:3.6
+    hostname: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongodata:/data/db
+# Docker will mount the ./mongodata directory on the host,
+# which contains your code,
+# into the container at /data/db.
+
+volumes:
+  mongodata:
