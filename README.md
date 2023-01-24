@@ -14,3 +14,5 @@ cd docker
 
 docker-compose up
 ```
+
+Go to http://localhost:4200
